@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+<!-- Bootstrap CSS CDN -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  /* Custom styles if needed */
+  .home-page {
+    background-color: blue;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<div class="home-page container">
+  <!-- Home Section -->
+  <section id="home" class="p-5">
+    <h1>Welcome to Home Page</h1>
+    <p>This is the home section.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-5">
+    <h2>About Us</h2>
+    <p>This is the about section.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-5">
+    <h2>Contact Us</h2>
+    <form id="contactForm" action="#" method="post" onSubmit="handleSubmit(event)">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="query" class="form-label">Query:</label>
+        <textarea class="form-control" id="query" name="query" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-light">Submit</button>
+    </form>
+  </section>
+</div>
+
+<!-- Bootstrap JS and Popper.js CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+    // Implement logic to handle form submission (e.g., send data to backend, etc.)
+    console.log('Form submitted!');
+  }
+</script>
+
+</body>
+</html>
